@@ -32,7 +32,7 @@ export const Register = () => {
     const signupbtn = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/user/register', { firstName, lastName, email, password, phone });
+            const response = await axios.post('https://petbackendd.onrender.com/user/register', { firstName, lastName, email, password, phone });
             localStorage.setItem("token", response.data.token);
             navigate("/");
 

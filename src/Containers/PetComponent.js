@@ -14,7 +14,7 @@ export const PetComponent = ({ name, animalName, animalType, animalBreed, animal
         <>
             <div className="col-md-3 col-12" style={{ cursor: "pointer" }} onClick={selectPetBtn}>
                 <div className="m-2 p-2">
-                    <img src={`http://localhost:4000/public/${animalImage}`} style={{ height: "300px" }} alt="animalImage" className='col-12' />
+                    <img src={`https://petbackendd.onrender.com/public/${animalImage}`} style={{ height: "300px" }} alt="animalImage" className='col-12' />
                     <div className='mt-2'>
                         <h5 className='text-danger'>
                             {animalName}
