@@ -14,8 +14,10 @@ export const Navbar1 = () => {
                 <Link className="navbar-brand" to="/">PetHarbor</Link>
                 <div>
                     {!localStorage.getItem("token") ?
-                        " " :
-                        <button onClick={logoutbtn} className='btn btn-outline-light'>Logout</button>}
+                        <button onClick={logoutbtn} className='btn btn-outline-light'>SIGN IN</button>
+                        :
+                        <button onClick={logoutbtn} className='btn btn-outline-light'>Logout</button>
+                    }
                 </div>
             </div>
         </nav>

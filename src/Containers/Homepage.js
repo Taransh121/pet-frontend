@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { About } from './About';
 
 export const Homepage = () => {
+    const navigate = useNavigate();
+
     const styles = {
         background: `url(${bg2})`,
         backgroundSize: 'cover',
@@ -15,7 +17,6 @@ export const Homepage = () => {
         fontSize: "20px",
         padding: "19% 5%",
     };
-    const navigate = useNavigate();
     const sectionRef = useRef(null);
 
     const adoptNowBtn = () => {

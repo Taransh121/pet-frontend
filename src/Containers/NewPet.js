@@ -48,7 +48,7 @@ export const NewPet = () => {
         e.preventDefault();
         try {
             // eslint-disable-next-line
-            const response = await axios.post('https://petbackendd.onrender.com/animal/addNewAnimal', { name, email, phone, animalAge, animalBreed, animalImage, animalName, animalType, city }, { headers: { "Content-Type": "multipart/form-data" } });
+            const response = await axios.post('http://localhost:4000/animal/addNewAnimal', { name, email, phone, animalAge, animalBreed, animalImage, animalName, animalType, city }, { headers: { "Content-Type": "multipart/form-data" } });
             navigate("/");
         }
         catch (error) {
